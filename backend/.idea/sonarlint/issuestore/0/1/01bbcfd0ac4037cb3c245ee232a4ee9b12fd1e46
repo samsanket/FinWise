@@ -1,0 +1,10 @@
+
+v
+java:S1192”"ZDefine a constant instead of duplicating this literal "Error: Role is not found." 4 times.(ÉÿÊ–ùÿÿÿÿ
+g
+java:S1192@"QDefine a constant instead of duplicating this literal "/api/auth/signin" 3 times.(Ò¦à¯
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡•š«
+<
+java:S1452?"&Remove usage of generic wildcard type.(“ºŠž
+<
+java:S1452`"&Remove usage of generic wildcard type.(”Úùê

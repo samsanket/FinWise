@@ -1,0 +1,14 @@
+
+`
+java:S1192F"JDefine a constant instead of duplicating this literal "/files/**" 4 times.(éËø
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡„Üè8Ôú¾È1
+x
+java:S3305"]Inject this field value directly into "authenticationProvider", the only method that uses it.(ñÊ®¤ùÿÿÿÿ
+h
+java:S3305!"RInject this field value directly into "filterChain", the only method that uses it.(†€Ú³
+]
+java:S1874"BRemove this use of "EnableGlobalMethodSecurity"; it is deprecated.(Ö†×Öÿÿÿÿÿ
+^
+java:S5738L"HRemove this call to a deprecated method, it has been marked for removal.(Ğ’ïš
+T
+java:S1144R"9Remove this unused private "getRequestedMatchers" method.(…ÂÆÿÿÿÿÿ
