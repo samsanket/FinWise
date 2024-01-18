@@ -1,10 +1,22 @@
 
-v
-java:S1192”"ZDefine a constant instead of duplicating this literal "Error: Role is not found." 4 times.(ÉÿÊ–ùÿÿÿÿ
+u
+java:S1192u"ZDefine a constant instead of duplicating this literal "Error: Role is not found." 4 times.(ƒ“À¸ûÿÿÿÿ
 g
-java:S1192@"QDefine a constant instead of duplicating this literal "/api/auth/signin" 3 times.(Ò¦à¯
+java:S1192?"QDefine a constant instead of duplicating this literal "/api/auth/signin" 3 times.(Ò¦à¯
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‡•š«
+_
+java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ8å½…àÑ1
+_
+java:S6813*"BRemove this field injection and use constructor injection instead.(êæÄŞ8æ½…àÑ1
+_
+java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄŞ8æ½…àÑ1
+_
+java:S68130"BRemove this field injection and use constructor injection instead.(êæÄŞ8æ½…àÑ1
+_
+java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞ8æ½…àÑ1
+_
+java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞ8æ½…àÑ1
 <
-java:S1452?"&Remove usage of generic wildcard type.(“ºŠ
+java:S1452>"&Remove usage of generic wildcard type.(“ºŠ
 <
-java:S1452`"&Remove usage of generic wildcard type.(”Úùê
+java:S1452U"&Remove usage of generic wildcard type.(”Úùê

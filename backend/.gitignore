@@ -1,0 +1,230 @@
+# IntelliJ IDEA
+.idea/
+
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# Maven
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Gradle
+build/
+
+# Local configuration file (application-local.properties)
+application-local.properties
+
+# Spring Boot
+*.iml
+.idea
+.idea_modules
+out/
+
+# Thumbnails directory on macOS
+._*
+
+# Windows folder config file
+Desktop.ini
+
+# Windows Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Visual Studio Code directory
+.vscode/
+
+# macOS
+.DS_Store
+
+# Thumbs.db (Windows thumbnail cache)
+Thumbs.db
+
+# User-specific files
+.idea/*
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.tssess
+*.log
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains
+*.iml
+
+# User-specific stuff
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Visual Studio Code directories
+.vscode/
+
+# Rider
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# .NET Scaffolding
+ScaffoldingAssemblies/
+
+# Rider
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# User-specific files
+.idea/*
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Rider
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# User-specific files
+.idea/*
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Thumbnails
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+../.idea/
+
+../.idea/FinWise.iml
+../.idea/misc.xml
+../.idea/modules.xml
+../.idea/restkit/
+../.idea/sonarlint/
+../.idea/vcs.xml
+
+../.idea/restkit/
+../.idea/sonarlint/
+/.idea/
