@@ -1,7 +1,7 @@
 package com.exp.FinWise.usersOnBoarding.service;
 
 import com.exp.FinWise.response.ResponseSBuilder;
-import com.exp.FinWise.response.ResponseResume;
+import com.exp.FinWise.response.ResponseCommon;
 import com.exp.FinWise.usersOnBoarding.dto.UserSinginRquest;
 import com.exp.FinWise.usersOnBoarding.model.User;
 import com.exp.FinWise.usersOnBoarding.repository.UserRepository;
@@ -21,7 +21,7 @@ public class UserOnBoardingService {
     @Autowired
     BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public ResponseResume singin(UserSinginRquest userSinginRquest) {
+    public ResponseCommon singin(UserSinginRquest userSinginRquest) {
         User user= new User();
         user.setAuthenticated(false);
         user.setEmail(userSinginRquest.getEmail());
@@ -35,7 +35,7 @@ public class UserOnBoardingService {
     return responseSBuilder.createResponse("User signed in successfully");
     }
 
-    public ResponseResume singup(UserSinginRquest userSinginRquest) {
+    public ResponseCommon singup(UserSinginRquest userSinginRquest) {
 
 
         return responseSBuilder.createResponse("User signed in successfully");

@@ -1,6 +1,5 @@
 package com.exp.FinWise.configuration;
 
-import com.exp.FinWise.Resume.Service.MailService;
 import jakarta.transaction.Transactional;
 import org.apache.logging.log4j.message.Message;
 import org.slf4j.Logger;

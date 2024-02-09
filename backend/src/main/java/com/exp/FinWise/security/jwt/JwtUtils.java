@@ -3,12 +3,14 @@ package com.exp.FinWise.security.jwt;
 import java.security.Key;
 import java.util.Date;
 
-import com.vidya.leap.usersOnBoarding.service.UserDetailsImpl;
+import com.exp.FinWise.configuration.JwtConfig;
+import com.exp.FinWise.usersOnBoarding.service.UserDetailsImpl;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
@@ -17,12 +19,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class JwtUtils {
   private static final Logger logger = LoggerFactory.getLogger(JwtUtils.class);
-
-  @Value("${vidyaleap.app.jwtSecret}")
-  private String jwtSecret;
-
-  @Value("${vidyaleap.app.jwtExpirationMs}")
-  private int jwtExpirationMs;
+  @Autowired
+  JwtConfig jwtConfig;
 
   public String generateJwtToken(Authentication authentication) {
 
@@ -31,13 +29,13 @@ public class JwtUtils {
     return Jwts.builder()
         .setSubject((userPrincipal.getUsername()))
         .setIssuedAt(new Date())
-        .setExpiration(new Date((new Date()).getTime() + jwtExpirationMs))
+        .setExpiration(new Date((new Date()).getTime() + jwtConfig.getJwtExpirationMs()))
         .signWith(key(), SignatureAlgorithm.HS256)
         .compact();
   }
   
   private Key key() {
-    return Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret));
+    return Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtConfig.getJwtSecret()));
   }
 
   public String getUserNameFromJwtToken(String token) {

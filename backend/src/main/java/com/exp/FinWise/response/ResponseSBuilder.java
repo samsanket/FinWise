@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 @Component
 public class ResponseSBuilder {
 
-    public ResponseResume createResponse(Object response, Integer statusCode){
-        ResponseResume responseResume = new ResponseResume();
+    public ResponseCommon createResponse(Object response, Integer statusCode){
+        ResponseCommon responseResume = new ResponseCommon();
         responseResume.setResponse(response);
         responseResume.setStatusCode(statusCode);
         return responseResume;
     }
-    public ResponseResume createResponse(Object response){
-        ResponseResume responseResume = new ResponseResume();
+    public ResponseCommon createResponse(Object response){
+        ResponseCommon responseResume = new ResponseCommon();
         responseResume.setStatusCode(HttpStatus.OK.value());
         responseResume.setResponse(response);
         return responseResume;

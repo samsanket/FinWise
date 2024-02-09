@@ -2,7 +2,7 @@ package com.exp.FinWise.security.jwt;
 
 import java.io.IOException;
 
-import com.vidya.leap.usersOnBoarding.service.UserDetailsServiceImpl;
+import com.exp.FinWise.usersOnBoarding.service.UserDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,6 +1,6 @@
 package com.exp.FinWise.usersOnBoarding.controller;
 
-import com.exp.FinWise.response.ResponseResume;
+import com.exp.FinWise.response.ResponseCommon;
 import com.exp.FinWise.usersOnBoarding.dto.UserSinginRquest;
 import com.exp.FinWise.usersOnBoarding.service.UserOnBoardingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +17,12 @@ public class UserOnBoardingController {
     UserOnBoardingService userOnBoardingService;
 
     @PostMapping("/singin")
-    public ResponseResume singin(@RequestBody UserSinginRquest userSinginRquest) {
+    public ResponseCommon singin(@RequestBody UserSinginRquest userSinginRquest) {
         return userOnBoardingService.singin(userSinginRquest);
     }
 
     @PostMapping("/singup")
-    public ResponseResume singup(@RequestBody UserSinginRquest userSinginRquest) {
+    public ResponseCommon singup(@RequestBody UserSinginRquest userSinginRquest) {
         return userOnBoardingService.singup(userSinginRquest);
     }
 }

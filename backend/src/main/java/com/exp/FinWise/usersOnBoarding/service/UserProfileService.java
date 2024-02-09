@@ -1,7 +1,7 @@
 package com.exp.FinWise.usersOnBoarding.service;
 
 import com.exp.FinWise.response.ResponseSBuilder;
-import com.exp.FinWise.response.ResponseResume;
+import com.exp.FinWise.response.ResponseCommon;
 import com.exp.FinWise.usersOnBoarding.dto.UpdateUserProfileDto;
 import com.exp.FinWise.usersOnBoarding.model.User;
 import com.exp.FinWise.usersOnBoarding.model.UserProfile;
@@ -27,7 +27,7 @@ public class UserProfileService {
 
     @Autowired
     ResponseSBuilder responseSBuilder;
-    public ResponseResume updateUserProfile(UserDetails currentUser, UpdateUserProfileDto updateUserProfileDto) {
+    public ResponseCommon updateUserProfile(UserDetails currentUser, UpdateUserProfileDto updateUserProfileDto) {
         Optional<User> optionalUseruser= userRepository.findByUsername(currentUser.getUsername());
         User  user = null;
         if (optionalUseruser.isPresent()){

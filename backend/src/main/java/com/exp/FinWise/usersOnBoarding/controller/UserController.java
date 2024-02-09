@@ -1,7 +1,7 @@
 package com.exp.FinWise.usersOnBoarding.controller;
 
 import com.exp.FinWise.annotation.CurrentUser;
-import com.exp.FinWise.response.ResponseResume;
+import com.exp.FinWise.response.ResponseCommon;
 import com.exp.FinWise.usersOnBoarding.dto.UpdateUserProfileDto;
 import com.exp.FinWise.usersOnBoarding.service.UserProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class UserController {
     }
     @PostMapping("update/profile")
     @CrossOrigin(origins = "http://localhost:3000")
-    public ResponseResume updateUserProfile(@CurrentUser UserDetails currentUser, @RequestBody UpdateUserProfileDto updateUserProfileDto) {
+    public ResponseCommon updateUserProfile(@CurrentUser UserDetails currentUser, @RequestBody UpdateUserProfileDto updateUserProfileDto) {
         return userProfileService.updateUserProfile(currentUser, updateUserProfileDto);
     }
 
