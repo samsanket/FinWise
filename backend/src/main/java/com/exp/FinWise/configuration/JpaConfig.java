@@ -3,7 +3,7 @@ package com.exp.FinWise.configuration;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-//configuration for JPA
+
 @Configuration
 @EnableJpaRepositories(basePackages = "com.exp.FinWise")
 @EnableTransactionManagement
