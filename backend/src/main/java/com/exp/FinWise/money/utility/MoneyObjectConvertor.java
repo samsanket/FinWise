@@ -2,12 +2,11 @@ package com.exp.FinWise.money.utility;
 
 import com.exp.FinWise.money.dto.MoneyDto;
 import com.exp.FinWise.money.model.Money;
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ObjectConverter {
+public class MoneyObjectConvertor {
     public static MoneyDto convertMoneyEntityToMoneyDto(Money money) {
         MoneyDto moneyDto = new MoneyDto();
         BeanUtils.copyProperties(money, moneyDto);

@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Table(name = "Expenses")
 public class Expense {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     @Column(name = "ExpenseID")
     private Long expenseID;
 
@@ -18,7 +18,7 @@ public class Expense {
     @JoinColumn(name = "id", nullable = false)
     private User user;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "CategoryID", nullable = false)
     private ExpenseCategory category;
 
@@ -29,7 +29,7 @@ public class Expense {
     private String description;
 
     @Column(name = "Date", nullable = false)
-    private LocalDateTime date;
+    private LocalDateTime dateTime;
 
 
     public Long getExpenseID() {
@@ -73,10 +73,10 @@ public class Expense {
     }
 
     public LocalDateTime getDate() {
-        return date;
+        return dateTime;
     }
 
     public void setDate(LocalDateTime date) {
-        this.date = date;
+        this.dateTime = date;
     }
 }

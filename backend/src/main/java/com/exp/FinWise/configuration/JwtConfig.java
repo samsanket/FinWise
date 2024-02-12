@@ -9,10 +9,11 @@ import org.springframework.stereotype.Component;
 public class JwtConfig {
 
 
-    private String jwtSecret= "=======================jwtfinwiseAPPlicationSecrete=Spring===========================";
+    @Value("${finwise.app.jwtSecret}")
+    private String jwtSecret;
 
-
-    private long jwtExpirationMs=86400000;
+    @Value("${finwise.app.jwtExpirationMs}")
+    private long jwtExpirationMs;
 
     public String getJwtSecret() {
         return jwtSecret;

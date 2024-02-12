@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/v1/money/")
+@RequestMapping("/api/v1/money")
 public class MoneyController {
 
     @Autowired
@@ -21,11 +21,14 @@ public class MoneyController {
         return moneyService.getmoneyForCurrentMonth(customUserDetails);
     }
 
-    @PostMapping("/")
+    @PostMapping("/save")
     public ResponseCommon addExpeneces(@CurrentUser UserDetails userDetails,
                                        @RequestBody ExpenseDTO expenseDTO){
             return moneyService.saveExpences(userDetails,expenseDTO);
     }
 
-
+    @GetMapping("/months")
+    public GetMoneyForCurrentDateResponse getexpencesFormonth(@CurrentUser UserDetails customUserDetails){
+        return moneyService.getmoneyForCurrentMonth(customUserDetails);
+    }
 }
